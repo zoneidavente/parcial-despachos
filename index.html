@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Despachos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h1>Control de Despachos</h1>
+        <p>Distribuidora La Quinta S.A.S.</p>
+
+        <form id="despachoForm">
+
+            <label>Solicitante</label>
+            <input type="text" id="solicitante" required>
+
+            <label>Correo</label>
+            <input type="email" id="correo" required>
+
+            <label>Código del producto</label>
+            <input 
+                type="text" 
+                id="codigo_producto" 
+                placeholder="Ej: INS-0101"
+                required
+            >
+
+            <label>Cantidad</label>
+            <input 
+                type="number" 
+                id="cantidad" 
+                min="1"
+                required
+            >
+
+            <label>Destino</label>
+            <input type="text" id="destino" required>
+
+            <label>Motivo</label>
+            <textarea id="motivo" required></textarea>
+
+            <button type="submit">
+                Registrar despacho
+            </button>
+
+        </form>
+
+        <div id="respuesta"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
